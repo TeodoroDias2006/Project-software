@@ -47,7 +47,7 @@ function Cadastro() {
     <>
       <Toaster position="top-center" />
 
-      <div className="flex min-h-screen overflow-hidden" id='imglocal'>
+      <div className="flex min-h-screen " id='imglocal'>
         <div className="w-1/2 flex items-center justify-end pr-4">
           <img src="/src/assets/telaCadastro1.png" alt="Logo" className="w-2/3 h-auto max-w-md" />
         </div>
