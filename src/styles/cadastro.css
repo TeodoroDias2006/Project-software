@@ -1,130 +1,213 @@
-/* /* body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+/* Estilos globais */
+body, html {
   margin: 0;
   padding: 0;
-  height: 100vh;
-} */
-.cadastro-page {
-  position: relative;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
   display: flex;
+}
+
+.justify-center {
   justify-content: center;
+}
+
+.items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.py-8, .px-6 {
+  padding: 2rem;
+}
+
+.sm\:w-full {
+  width: 100%;
+}
+
+/* Container de formulário */
+#imglocal {
+  background-color: #f5f5f5;
+}
+
+.form-container {
+  display: flex;
   flex-direction: column;
-  height: 100vh; /* Para centralizar verticalmente */
+  align-items: center;
 }
 
-.menu-button {
-  position: fixed; /* Muda para fixed para ficar sempre no canto */
-  top: 20px;
-  left: 20px;
-  background-color: #87CEEB;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  z-index: 100; /* Para garantir que o botão fique acima de outros elementos */
-  width: 80px;
+.form-wrapper {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilos de cabeçalho */
+.form-header {
   text-align: center;
-}
-
-.menu {
-  position: fixed; /* Muda para fixed para manter o menu no canto */
-  top: 60px; /* Abaixo do botão de menu */
-  left: 20px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 100; /* Para garantir que o menu fique acima de outros elementos */
-  padding: 10px;
-}
-
-.menu a {
-  display: block;
-  margin: 5px 0;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-}
-
-.cadastro-container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
   color: #333;
 }
 
-img {
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto;
+.form-subtitle {
+  margin-top: 8px;
+  text-align: center;
+  color: #555;
 }
 
-form {
+/* Estilos do formulário */
+.form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  margin-top: 1rem;
 }
 
-/* input {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-} */
+.label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 4px;
+}
 
-.senha-container {
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-radius: 100px;
+}
+
+.input:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+
+
+.relative {
   position: relative;
 }
 
 .eye-icon {
   position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
+  right: 8px;
+  bottom: 8px;
+  color: #888;
   cursor: pointer;
-  color: #007bff;
 }
 
-/* button {
-  background-color: #87CEEB;
+/* Estilos do botão */
+.submit-button {
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 30%;
+  margin-left: auto; 
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
   color: white;
-  padding: 10px;
+  background-color: #4f46e5;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 20px;
   cursor: pointer;
-  margin-top: 10px;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #66CCCC;
-} */
+.container {
+  display: flex; 
+}
 
-.terms, .login {
+
+.submit-button:hover {
+  background-color: #4338ca;
+}
+
+/* Links de termos e login */
+.link-text {
+  text-align: center;
   font-size: 12px;
   color: #666;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-a {
-  color: #007bff;
+.link {
+  color: #4f46e5;
+  font-weight: bold;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-} 
+.link:hover {
+  color: #4338ca;
+}
+
+.Formulario{
+  margin-top: -8px;
+}
+
+.LocalLogo img {
+  width: 100%; 
+  height: 93vh; 
+  border-radius: 20px;
+  object-fit: cover; 
+  margin-left: 4vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cadastro-form-container {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+  /* Título do formulário */
+  .cadastro-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilo do formulário */
+  .cadastro-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+#nome {
+  border-radius: 20px;
+}
+#email {
+  border-radius: 20px;
+}
+
+#age {
+  border-radius: 20px;
+}
+
+#verifyEmail {
+  border-radius: 20px;
+}
+
+#password {
+  border-radius: 20px;
+}
+
