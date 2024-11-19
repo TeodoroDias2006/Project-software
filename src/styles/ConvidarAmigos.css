@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    
+  }
+  
 .convidar-amigos-container {
     text-align: center;
     margin: 20px auto;
@@ -5,6 +16,8 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     max-width: 400px;
+    min-width: 300px;
+    margin-top: 100px;
 }
 
 /* input[type="email"] {
@@ -15,15 +28,35 @@
     margin-bottom: 15px;
 } */
 
-/* button {
-    background-color: #2196F3;
+
+.Enviar {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 30%;
+    margin-left: auto; 
+    margin-top: 10px;
+    margin-bottom: px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
     color: white;
+    background-color: #4e46e5;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 20px;
+    cursor: pointer;  
 }
 
-button:hover {
-    background-color: #0b7dda;
-} */
+.texConvide{
+    font-weight: 600;
+    color: #222;
+    margin-top: 05px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Espaço{
+    margin-bottom: 5px;
+}
+ 

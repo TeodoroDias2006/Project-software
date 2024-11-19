@@ -60,21 +60,15 @@ function ConvidarAmigos() {
   return (
     <>
     <NavBar />
+    
     <form
       ref={form}
       onSubmit={enviarConvite}
       className="convidar-amigos-container"
     >
-      <h2>Convide um amigo</h2>
-      <input
-        type="text"
-        name="to_name"
-        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-
-        value={nomeDoAmigo}
-        onChange={(e) => setNomeDoAmigo(e.target.value)}
-        placeholder="Nome do amigo"
-      />
+      <h2 className="texConvide">Convide um amigo</h2>
+    
+      <div className="Espaço">
       <input
         type="text"
         name="from_name"
@@ -82,8 +76,23 @@ function ConvidarAmigos() {
 
         value={nomeRemetente}
         onChange={(e) => setNomeRemetente(e.target.value)}
-        placeholder="Seu nome"
+        placeholder="Seu nome e sobrenome"
       />
+      </div>
+
+      <div className="Espaço">  
+      <input
+        type="text"
+        name="to_name"
+        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+
+        value={nomeDoAmigo}
+        onChange={(e) => setNomeDoAmigo(e.target.value)}
+        placeholder="Nome do Convidado"
+      />
+      </div>
+
+      <div className="Espaço">
       <input
         type="email"
         name="email"
@@ -91,9 +100,11 @@ function ConvidarAmigos() {
 
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="Seu e-mail"
+        placeholder="E-mail do Convidado"
       />
-      <button onClick={enviarConvite}>Enviar Convite</button>
+      </div>
+
+      <button className="Enviar" onClick={enviarConvite}>Enviar</button>
       {status && <p>{status}</p>}
     </form>
     </>
